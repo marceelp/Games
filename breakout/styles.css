@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.grid {
+  background-image: url("img/space.jpg");
+  position: absolute;
+  align-self: center;
+  width: 780px; /* original 600 */
+  height: 620px; /* original 300 */
+  border: 1px solid #fff;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px,
+    rgba(255, 255, 255, 0.22) 0px 15px 12px;
+}
+
+.block {
+  border-radius: 5px;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  background-color: rgba(186, 186, 186, 0.825);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.user {
+  position: absolute;
+  border-radius: 5px;
+  width: 140px;
+  height: 20px;
+  /* background-color: blueviolet; */
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#score {
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+}
+
+#reload {
+  color: rgb(168, 168, 168);
+  font-size: 15px;
+  font-weight: bold;
+}

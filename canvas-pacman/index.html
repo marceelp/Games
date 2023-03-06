@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Pacman Game by Marcel Peda</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: black;
+        color: white;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+      #container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 920px;
+        height: 580px;
+      }
+      canvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      p {
+        font-size: 20px;
+        margin: 5px;
+      }
+      #overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        z-index: 1;
+      }
+      #finishBlock {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #result {
+        font-size: 50px;
+        font-weight: bold;
+      }
+      #playAgain {
+        font-size: 20px;
+        font-weight: 200;
+        color: red;
+        display: none;
+      }
+      #scoreParagraph {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlay">
+      <div id="finishBlock">
+        <p id="result">You win!</p>
+        <div style="height: 20px">
+          <p id="playAgain">Reload page for restart</p>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <p id="scoreParagraph">Score: <span id="score">0</span></p>
+      <canvas></canvas>
+    </div>
+
+    <script src="./JS/app.js" type="module"></script>
+  </body>
+</html>

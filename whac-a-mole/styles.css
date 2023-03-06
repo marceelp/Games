@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+  color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  background-color: #fff;
+  width: 612px;
+  height: 612px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mole {
+  background-image: url("img/dude.jpg");
+  background-size: cover;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+}
+
+#score {
+  color: greenyellow;
+}
+
+#time-left {
+  color: red;
+}

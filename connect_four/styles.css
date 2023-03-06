@@ -1,0 +1,52 @@
+body {
+  background-image: url(/wallpaper.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  border: 10px solid black;
+  background-color: white;
+  height: 540px;
+  width: 630px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  height: 90px;
+  width: 90px;
+}
+
+.player-one {
+  background-color: red;
+  border-radius: 50px;
+}
+
+.player-two {
+  background-color: blue;
+  border-radius: 50px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  width: fit-content;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+}

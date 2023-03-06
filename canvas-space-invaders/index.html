@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Space Invaders</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background-color: lightcoral;
+      }
+
+      div {
+        position: relative;
+      }
+
+      p {
+        font-size: 25px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        margin: 5px 0 0 10px;
+        color: white;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p><span>Score: </span> <span id="score">0</span></p>
+      <canvas></canvas>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
